@@ -49,12 +49,14 @@
       ) );
       ?>
 
+      <?php if ( class_exists( 'WooCommerce' ) ) : ?>
       <div class="flex items-center gap-3">
-        <a href="<?php echo wc_get_cart_url(); ?>" class="relative flex items-center justify-center text-white hover:text-brand-gold transition-colors" aria-label="Carrinho">
+        <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="relative flex items-center justify-center text-white hover:text-brand-gold transition-colors" aria-label="Carrinho">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          <span class="absolute top-[14px] text-[11px] font-black leading-none"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+          <span class="absolute top-[14px] text-[11px] font-black leading-none"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
         </a>
       </div>
+      <?php endif; ?>
     </div>
 
     <!-- Mobile Nav -->
