@@ -57,13 +57,13 @@
       </div>
     </div>
 
-    <!-- Mobile Nav (Static placeholder for now) -->
+    <!-- Mobile Nav -->
     <nav class="lg:hidden flex flex-wrap justify-center gap-x-4 gap-y-2 px-6 pb-4 border-t border-white/5 pt-3">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">HOME</a>
       <a href="<?php echo esc_url( home_url( '/a-braspump' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">A BRASPUMP</a>
       <a href="<?php echo esc_url( home_url( '/bombas-de-vacuo' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">BOMBAS</a>
       <a href="<?php echo esc_url( home_url( '/unidades-suctoras' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">SUCTORAS</a>
       <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">LOJA</a>
-      <a href="<?php echo esc_url( home_url( '/minha-conta' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">CONTA</a>
+      <a href="<?php echo esc_url( home_url( '/contato' ) ); ?>" class="text-[11px] font-black text-white hover:text-brand-gold transition">CONTATO</a>
     </nav>
   </header>
