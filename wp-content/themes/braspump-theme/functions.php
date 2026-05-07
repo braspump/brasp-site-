@@ -75,3 +75,26 @@ class Braspump_Menu_Walker extends Walker_Nav_Menu {
         $output .= '</a>';
     }
 }
+
+/**
+ * Remove o atributo Voltagem especificamente para o produto Unidade Suctora
+ * E auto-seleciona a primeira opção para não travar o botão de compra
+ */
+add_filter( 'woocommerce_dropdown_variation_attribute_options_html', 'braspump_hide_voltage_for_suctors', 10, 2 );
+function braspump_hide_voltage_for_suctors( $html, $args ) {
+    if ( is_product() ) {
+        global $post;
+        // Regra para Unidade Suctora (Esconde Voltagem)
+        if ( $post->post_name === 'unidade-suctora' && strpos( $args['attribute'], 'voltagem' ) !== false ) {
+            $html .= '<style>.variations tr:has(select[name*="voltagem"]) { display: none !important; }</style>';
+            $html .= '<script>jQuery(document).ready(function($) { $("select[name*=\'voltagem\']").val($("select[name*=\'voltagem\'] option:eq(1)").val()).change(); });</script>';
+        }
+        
+        // Regra para Turbo VAC (Esconde Capa, se existir)
+        if ( $post->post_name === 'bomba-de-vacuo-turbo-vac' && strpos( $args['attribute'], 'capa' ) !== false ) {
+            $html .= '<style>.variations tr:has(select[name*="capa"]) { display: none !important; }</style>';
+            $html .= '<script>jQuery(document).ready(function($) { $("select[name*=\'capa\']").val($("select[name*=\'capa\'] option:eq(1)").val()).change(); });</script>';
+        }
+    }
+    return $html;
+}
