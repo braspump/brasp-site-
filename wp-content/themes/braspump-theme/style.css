@@ -680,3 +680,113 @@ body.woocommerce-page .woocommerce-error {
 }
 
 
+/* ==========================================================================
+   Responsive Overrides (Mobile First Adjustments)
+   ========================================================================== */
+
+@media (max-width: 767px) {
+    /* Base Typography */
+    h1 { font-size: 2.25rem !important; }
+    h2 { font-size: 1.875rem !important; }
+    h3 { font-size: 1.5rem !important; }
+    
+    .hero-title {
+        font-size: 3.5rem !important;
+        line-height: 0.85 !important;
+    }
+
+    /* Layout Spacing */
+    .py-16, .py-20, .py-24, .py-28 {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+
+    .container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    /* WooCommerce Single Product */
+    body.woocommerce-page div.product {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    body.woocommerce-page div.product div.images,
+    body.woocommerce-page div.product div.summary {
+        width: 100% !important;
+        float: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    body.woocommerce-page div.product div.images {
+        margin-bottom: 2rem !important;
+        padding: 1.5rem !important;
+    }
+
+    body.woocommerce-page div.product .product_title {
+        font-size: 1.75rem !important;
+        text-align: center !important;
+    }
+
+    body.woocommerce-page div.product p.price, 
+    body.woocommerce-page div.product span.price {
+        text-align: center !important;
+    }
+
+    body.woocommerce-page div.product form.cart {
+        justify-content: center !important;
+    }
+
+    body.woocommerce-page div.product form.cart .button {
+        width: 100% !important;
+    }
+
+    body.woocommerce-page .quantity {
+        margin-bottom: 1rem !important;
+    }
+
+    /* Tabs on Mobile */
+    body.woocommerce-page div.product .woocommerce-tabs ul.tabs {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+
+    body.woocommerce-page div.product .woocommerce-tabs ul.tabs li {
+        width: 100% !important;
+        padding: 0.75rem 0 !important;
+    }
+
+    /* Variations Table */
+    body.woocommerce-page table.variations select {
+        font-size: 0.875rem !important;
+    }
+
+    /* Page Banner */
+    .page-banner {
+        padding: 1.25rem 2rem !important;
+        margin-top: -2rem !important;
+    }
+
+    /* Footer Adjustments */
+    footer .container {
+        text-align: center !important;
+    }
+
+    footer .flex {
+        justify-content: center !important;
+    }
+
+    footer .grid {
+        gap: 2.5rem !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    /* Hero Image adjustment */
+    .min-h-[85vh] {
+        min-height: auto !important;
+        padding-bottom: 5rem !important;
+    }
+}
