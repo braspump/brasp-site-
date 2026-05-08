@@ -60,6 +60,18 @@ if ( class_exists( 'WooCommerce' ) ) {
     function braspump_wrapper_end() {
         echo '</div></main>';
     }
+
+    /**
+     * Desativa o modo "Coming Soon" / "Em breve" do WooCommerce (8.2+).
+     * Isso impede que a mensagem "Grandes coisas estão no horizonte"
+     * apareça para visitantes não logados, especialmente no celular.
+     */
+    add_action( 'init', 'braspump_disable_woocommerce_coming_soon' );
+    function braspump_disable_woocommerce_coming_soon() {
+        if ( get_option( 'woocommerce_coming_soon' ) !== 'no' ) {
+            update_option( 'woocommerce_coming_soon', 'no' );
+        }
+    }
 }
 
 /**
