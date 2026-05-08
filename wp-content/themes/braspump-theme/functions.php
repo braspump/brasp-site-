@@ -110,3 +110,76 @@ function braspump_hide_voltage_for_suctors( $html, $args ) {
     }
     return $html;
 }
+
+/**
+ * Fallback de imagens para produtos sem imagem cadastrada no WooCommerce.
+ * Mapeia o slug de cada produto para a imagem correspondente na pasta /images/ do tema.
+ * Isso corrige os ícones de "sem imagem" na página /shop no celular e desktop.
+ */
+add_filter( 'woocommerce_product_get_image', 'braspump_product_image_fallback', 10, 5 );
+function braspump_product_image_fallback( $image, $product, $size, $attr, $placeholder ) {
+    // Se o produto já tem uma imagem cadastrada, não faz nada
+    if ( has_post_thumbnail( $product->get_id() ) ) {
+        return $image;
+    }
+
+    // Mapeamento de slug do produto → arquivo de imagem no tema
+    $slug_image_map = array(
+        'bomba-de-vacuo-bc2-linha-carbon' => 'BC2-C-CAPA.webp',
+        'bomba-de-vacuo-bc4-linha-carbon' => 'BC4-C-CAPA.webp',
+        'bomba-de-vacuo-turbo-light'      => 'Turbo-Light-C-capa.webp',
+        'bomba-de-vacuo-turbo-light-sc'   => 'Turbo-Light-SC.webp',
+        'bomba-de-vacuo-turbo-max'        => 'Turbo-Max.webp',
+        'bomba-de-vacuo-turbo-vac'        => 'Turbo-VAC.webp',
+        'unidade-suctora'                 => 'unidade-suctora-mdelo-gp.webp',
+    );
+
+    $slug = $product->get_slug();
+
+    if ( isset( $slug_image_map[ $slug ] ) ) {
+        $img_url = get_template_directory_uri() . '/images/' . $slug_image_map[ $slug ];
+        return '<img src="' . esc_url( $img_url ) . '" 
+                     alt="' . esc_attr( $product->get_name() ) . '" 
+                     class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" 
+                     loading="lazy"
+                     style="width:100%; height:auto; object-fit:contain;" />';
+    }
+
+    return $image;
+}
+
+/**
+ * Fallback também para a galeria na página individual do produto.
+ */
+add_filter( 'woocommerce_single_product_image_thumbnail_html', 'braspump_single_product_image_fallback', 10, 2 );
+function braspump_single_product_image_fallback( $html, $attachment_id ) {
+    // Só atua se não há imagem (html contém o placeholder)
+    if ( $attachment_id || ! is_product() ) {
+        return $html;
+    }
+
+    global $post;
+
+    $slug_image_map = array(
+        'bomba-de-vacuo-bc2-linha-carbon' => 'BC2-C-CAPA.webp',
+        'bomba-de-vacuo-bc4-linha-carbon' => 'BC4-C-CAPA.webp',
+        'bomba-de-vacuo-turbo-light'      => 'Turbo-Light-C-capa.webp',
+        'bomba-de-vacuo-turbo-light-sc'   => 'Turbo-Light-SC.webp',
+        'bomba-de-vacuo-turbo-max'        => 'Turbo-Max.webp',
+        'bomba-de-vacuo-turbo-vac'        => 'Turbo-VAC.webp',
+        'unidade-suctora'                 => 'unidade-suctora-mdelo-gp.webp',
+    );
+
+    $slug = $post->post_name;
+
+    if ( isset( $slug_image_map[ $slug ] ) ) {
+        $img_url = get_template_directory_uri() . '/images/' . $slug_image_map[ $slug ];
+        return '<div class="woocommerce-product-gallery__image">
+                    <img src="' . esc_url( $img_url ) . '" 
+                         alt="' . esc_attr( get_the_title() ) . '"
+                         style="width:100%; height:auto; object-fit:contain; max-height:500px;" />
+                </div>';
+    }
+
+    return $html;
+}
