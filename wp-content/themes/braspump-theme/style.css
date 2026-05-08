@@ -889,11 +889,37 @@ body.woocommerce-page .woocommerce-error {
     footer .grid {
         gap: 2.5rem !important;
     }
+
+    /* -------------------------------------------------------
+       Fix: Imagens dos cards de produto na página da loja
+       No mobile, aspect-ratio + max-h-full pode colapsar para
+       0px em navegadores Android. Esta regra garante visibilidade.
+       ------------------------------------------------------- */
+    article .aspect-square {
+        min-height: 230px !important;
+        height: auto !important;
+        aspect-ratio: unset !important;
+    }
+
+    article .aspect-square img {
+        width: auto !important;
+        max-width: 85% !important;
+        height: auto !important;
+        max-height: 190px !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* A 2ª imagem (sem capa/hover) permanece oculta por padrão no mobile */
+    article .aspect-square img.absolute {
+        display: none !important;
+    }
 }
 
 @media (max-width: 1023px) {
     /* Hero Image adjustment */
-    .min-h-[85vh] {
+    .min-h-\[85vh\] {
         min-height: auto !important;
         padding-bottom: 5rem !important;
     }
