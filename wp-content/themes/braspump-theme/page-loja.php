@@ -16,7 +16,7 @@ get_header(); ?>
     </section>
 
     <section class="container mx-auto px-4 py-14">
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <!-- BC2 -->
         <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
           <span class="absolute top-3 left-3 z-10 rounded-full bg-brand-gold px-3 py-1 text-xs font-bold text-brand-gold-foreground">Oferta!</span>

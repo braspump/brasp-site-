@@ -14,7 +14,7 @@
         <div class="md:-mt-24">
           <h1 class="hero-title">Excelência</h1>
           <p class="mt-4 text-2xl md:text-3xl text-white font-medium tracking-tight">em soluções para seu consultório</p>
-          <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="btn-primary mt-10">ACESSE A LOJA</a>
+          <a href="<?php echo function_exists( 'wc_get_page_id' ) ? esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) : esc_url( home_url( '/shop' ) ); ?>" class="btn-primary mt-10">ACESSE A LOJA</a>
         </div>
 
         <div class="relative flex justify-center md:justify-end items-center">

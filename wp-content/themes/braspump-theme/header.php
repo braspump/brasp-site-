@@ -65,7 +65,7 @@
       <a href="<?php echo esc_url( home_url( '/a-braspump' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">A BRASPUMP</a>
       <a href="<?php echo esc_url( home_url( '/bombas-de-vacuo' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">BOMBAS</a>
       <a href="<?php echo esc_url( home_url( '/unidades-suctoras' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">SUCTORAS</a>
-      <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">LOJA</a>
+      <a href="<?php echo function_exists( 'wc_get_page_id' ) ? esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) : esc_url( home_url( '/shop' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">LOJA</a>
       <a href="<?php echo esc_url( home_url( '/contato' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">CONTATO</a>
     </nav>
   </header>
