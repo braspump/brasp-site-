@@ -1,35 +1,44 @@
-﻿<?php 
-require_once("wp-load.php"); 
-require_once(ABSPATH . "wp-admin/includes/plugin-install.php"); 
-require_once(ABSPATH . "wp-admin/includes/file.php"); 
-require_once(ABSPATH . "wp-admin/includes/misc.php"); 
-require_once(ABSPATH . "wp-admin/includes/plugin.php"); 
+<?php
+require_once("wp-load.php");
 
-$plugin_slug = "woocommerce-extra-checkout-fields-for-brazil";
+$url = "https://downloads.wordpress.org/plugin/woocommerce-extra-checkout-fields-for-brazil.latest-stable.zip";
+$zipFile = "plugin.zip";
+$extractPath = WP_PLUGIN_DIR;
 
-echo "Instalando Brazilian Market on WooCommerce...\n";
+echo "<h1>Instalador de Plugin Brasileiro</h1>";
 
-if (is_plugin_active($plugin_slug . "/" . $plugin_slug . ".php")) {
-    echo "O plugin ja esta ativo!";
-    exit;
-}
+// 1. Download
+echo "Baixando plugin... ";
+$ch = curl_init($url);
+$fp = fopen($zipFile, "w+");
+curl_setopt($ch, CURLOPT_FILE, $fp);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_exec($ch);
+curl_close($ch);
+fclose($fp);
+echo "✅ Pronto.<br>";
 
-$api = plugins_api("plugin_information", array("slug" => $plugin_slug));
-if (is_wp_error($api)) {
-    echo "Erro ao buscar informacoes do plugin.";
-    exit;
-}
-
-$status = install_plugin_install_status($api);
-if ($status["status"] == "install") {
-    $upgrader = new Plugin_Upgrader(new Automatic_Upgrader_Skin());
-    $install = $upgrader->install($api->download_link);
-    if (is_wp_error($install)) {
-        echo "Erro na instalacao.";
-        exit;
+// 2. Extração
+if (class_exists('ZipArchive')) {
+    echo "Extraindo arquivos... ";
+    $zip = new ZipArchive;
+    if ($zip->open($zipFile) === TRUE) {
+        $zip->extractTo($extractPath);
+        $zip->close();
+        echo "✅ Pronto.<br>";
+    } else {
+        echo "❌ Erro ao abrir o ZIP.<br>";
     }
+} else {
+    echo "❌ Servidor sem ZipArchive. Use o Git para subir a pasta.<br>";
 }
 
-activate_plugin($plugin_slug . "/" . $plugin_slug . ".php");
-echo "✅ Plugin instalado e ativo com sucesso!";
+// 3. Ativação
+echo "Ativando... ";
+activate_plugin("woocommerce-extra-checkout-fields-for-brazil/woocommerce-extra-checkout-fields-for-brazil.php");
+echo "✅ Plugin Ativo!<br>";
+
+// Limpeza
+unlink($zipFile);
 unlink(__FILE__);
+?>
