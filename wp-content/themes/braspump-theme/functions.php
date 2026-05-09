@@ -183,3 +183,91 @@ function braspump_single_product_image_fallback( $html, $attachment_id ) {
 
     return $html;
 }
+
+/**
+ * Adiciona campos de CPF, Número e Bairro no Checkout do WooCommerce
+ */
+add_filter( 'woocommerce_checkout_fields', 'braspump_add_brazilian_checkout_fields' );
+function braspump_add_brazilian_checkout_fields( $fields ) {
+    // Adiciona o campo de CPF
+    $fields['billing']['billing_cpf'] = array(
+        'label'       => 'CPF',
+        'placeholder' => '000.000.000-00',
+        'required'    => true,
+        'class'       => array( 'form-row-wide' ),
+        'clear'       => true,
+        'priority'    => 25,
+    );
+
+    // Adiciona Número do endereço
+    $fields['billing']['billing_number'] = array(
+        'label'       => 'Número',
+        'placeholder' => 'Nº',
+        'required'    => true,
+        'class'       => array( 'form-row-first' ),
+        'clear'       => false,
+        'priority'    => 51,
+    );
+
+    // Adiciona Bairro
+    $fields['billing']['billing_neighborhood'] = array(
+        'label'       => 'Bairro',
+        'placeholder' => 'Bairro',
+        'required'    => true,
+        'class'       => array( 'form-row-last' ),
+        'clear'       => true,
+        'priority'    => 52,
+    );
+
+    return $fields;
+}
+
+/**
+ * Validação do CPF no Checkout
+ */
+add_action('woocommerce_checkout_process', 'braspump_validate_cpf_checkout');
+function braspump_validate_cpf_checkout() {
+    if ( ! empty( $_POST['billing_cpf'] ) ) {
+        $cpf = preg_replace('/[^0-9]/', '', $_POST['billing_cpf']);
+        if (strlen($cpf) != 11) {
+            wc_add_notice( 'Por favor, insira um CPF válido.', 'error' );
+        }
+    }
+}
+
+/**
+ * Salva os campos personalizados no pedido
+ */
+add_action( 'woocommerce_checkout_update_order_meta', 'braspump_save_brazilian_checkout_fields' );
+function braspump_save_brazilian_checkout_fields( $order_id ) {
+    if ( ! empty( $_POST['billing_cpf'] ) ) {
+        update_post_meta( $order_id, '_billing_cpf', sanitize_text_field( $_POST['billing_cpf'] ) );
+        update_post_meta( $order_id, 'billing_cpf', sanitize_text_field( $_POST['billing_cpf'] ) );
+    }
+    if ( ! empty( $_POST['billing_number'] ) ) {
+        update_post_meta( $order_id, '_billing_number', sanitize_text_field( $_POST['billing_number'] ) );
+    }
+    if ( ! empty( $_POST['billing_neighborhood'] ) ) {
+        update_post_meta( $order_id, '_billing_neighborhood', sanitize_text_field( $_POST['billing_neighborhood'] ) );
+    }
+}
+
+/**
+ * Exibe os campos na administração do pedido (WP-Admin)
+ */
+add_filter( 'woocommerce_admin_billing_fields', 'braspump_admin_billing_fields' );
+function braspump_admin_billing_fields( $fields ) {
+    $fields['cpf'] = array(
+        'label' => 'CPF',
+        'show'  => true,
+    );
+    $fields['number'] = array(
+        'label' => 'Número',
+        'show'  => true,
+    );
+    $fields['neighborhood'] = array(
+        'label' => 'Bairro',
+        'show'  => true,
+    );
+    return $fields;
+}
