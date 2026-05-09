@@ -1,22 +1,29 @@
 <?php
 require_once('wp-load.php');
-$settings = get_option('woocommerce_braspress-api-loja5_settings');
 
-echo "<h1>Teste de Diagnóstico Braspress</h1>";
+$options = array(
+    "enabled" => "yes",
+    "serial" => "9664-16718-148-22092023-4WAB-LOJA5",
+    "login" => "SCALARIESCALARI_PRD",
+    "senha" => "YdL5QEG48u34QKeP",
+    "cnpj" => "02820874000110",
+    "cep" => "13903340",
+    "ambiente" => "0", // 0 = Produção
+    "frete_tipo" => "1", // 1 = CIF
+    "exibir_prazo" => "titulo",
+    "debug" => "yes"
+);
 
-if (!$settings) {
-    echo "<p style='color:red'>❌ Erro: Configurações não encontradas no banco de dados!</p>";
-    exit;
+echo "<h1>Forçando Configurações Braspress</h1>";
+
+if (update_option("woocommerce_braspress-api-loja5_settings", $options)) {
+    echo "<p style='color:green'>✅ SUCESSO: Configurações gravadas no banco de dados!</p>";
+} else {
+    echo "<p style='color:orange'>⚠️ AVISO: As configurações já estavam lá ou não puderam ser alteradas.</p>";
 }
 
-echo "<ul>";
-echo "<li>Serial configurado: " . (empty($settings['serial']) ? '❌ Não' : '✅ Sim') . "</li>";
-echo "<li>Login configurado: " . (empty($settings['login']) ? '❌ Não' : '✅ Sim') . "</li>";
-echo "<li>Senha configurada: " . (empty($settings['senha']) ? '❌ Não' : '✅ Sim') . "</li>";
-echo "<li>CEP de Origem: " . $settings['cep'] . "</li>";
-echo "</ul>";
-
-// Teste de conexão real
+// Teste de conexão real após gravar
+$settings = get_option('woocommerce_braspress-api-loja5_settings');
 $auth = base64_encode($settings['login'] . ':' . $settings['senha']);
 $body = json_encode([
     'cnpjRemetente' => preg_replace('/\D/', '', $settings['cnpj']),
@@ -41,13 +48,10 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
 $res = curl_exec($ch);
 $http = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-echo "<h2>Resultado da Conexão com Braspress</h2>";
-echo "Status HTTP: " . $http . "<br>";
-echo "Resposta: <pre>" . htmlspecialchars($res) . "</pre>";
+echo "<h2>Teste de Conexão Pós-Gravação</h2>";
+echo "Resposta Braspress: <pre>" . htmlspecialchars($res) . "</pre>";
 
 if ($http == 200) {
-    echo "<p style='color:green'>✅ A API está respondendo corretamente do seu servidor!</p>";
-} else {
-    echo "<p style='color:red'>❌ Erro na comunicação. Verifique os dados acima.</p>";
+    echo "<p style='color:green'>🚀 TUDO PRONTO! A API está funcionando. Pode testar o checkout agora.</p>";
 }
 ?>
