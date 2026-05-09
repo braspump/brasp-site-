@@ -34,7 +34,10 @@ $body = json_encode([
     'cepDestino' => '13903270',
     'vlrMercadoria' => 100.00,
     'peso' => 1.00,
-    'volumes' => 1
+    'volumes' => 1,
+    'Cubagem' => [
+        ['largura' => '0.43', 'altura' => '0.46', 'comprimento' => '0.31', 'volumes' => 1]
+    ]
 ]);
 
 $ch = curl_init('https://api.braspress.com/v1/cotacao/calcular/json');

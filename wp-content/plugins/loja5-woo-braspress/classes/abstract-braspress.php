@@ -354,7 +354,7 @@ abstract class Loja5_Shipping_Braspress extends WC_Shipping_Method {
             $alt = (float)$values['data']->get_height()/100;
             $com = (float)$values['data']->get_length()/100;
             $lar = (float)$values['data']->get_width()/100;
-			$request['cubagem'][] = array('largura'=>number_format($lar, 2, '.', ''),'altura'=>number_format($alt, 2, '.', ''),'comprimento'=>number_format($com, 2, '.', ''),'volumes'=>$values['quantity']);
+			$request['Cubagem'][] = array('largura'=>number_format($lar, 2, '.', ''),'altura'=>number_format($alt, 2, '.', ''),'comprimento'=>number_format($com, 2, '.', ''),'volumes'=>$values['quantity']);
     	}
 		$request['volumes'] = (int)$volume;
 		//ambiente
