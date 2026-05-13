@@ -24,7 +24,7 @@ get_header(); ?>
     <!-- Category Filters -->
     <section class="bg-muted py-6 border-b border-border sticky top-[72px] z-30">
       <div class="container mx-auto px-4 flex flex-wrap justify-center gap-4">
-        <button class="px-6 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-md transition hover:scale-105">TODOS</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-md transition hover:scale-105" data-filter="all">TODOS</button>
         <?php 
         $categories = get_terms( array(
             'taxonomy' => 'product_cat',
@@ -32,7 +32,7 @@ get_header(); ?>
             'orderby'  => 'include'
         ) );
         foreach ($categories as $cat) : ?>
-          <button class="px-6 py-2 rounded-full bg-white text-primary border border-primary/10 font-bold text-sm transition hover:bg-primary hover:text-white hover:scale-105">
+          <button class="filter-btn px-6 py-2 rounded-full bg-white text-primary border border-primary/10 font-bold text-sm transition hover:bg-primary hover:text-white hover:scale-105" data-filter="<?php echo esc_attr($cat->slug); ?>">
             <?php echo esc_html( strtoupper($cat->name) ); ?>
           </button>
         <?php endforeach; ?>
@@ -65,9 +65,19 @@ get_header(); ?>
             $main_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
             $hover_img = !empty($attachment_ids) ? wp_get_attachment_url($attachment_ids[0]) : $main_img;
             $category_names = wc_get_product_category_list( get_the_ID(), ', ', '<span class="text-[10px] font-black text-brand-gold uppercase tracking-tighter mb-1 block">', '</span>' );
+            
+            // Get category slugs for filtering
+            $terms = get_the_terms( get_the_ID(), 'product_cat' );
+            $term_slugs = [];
+            if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+                foreach ( $terms as $term ) {
+                    $term_slugs[] = $term->slug;
+                }
+            }
+            $data_categories = implode(' ', $term_slugs);
             ?>
             
-            <div class="group rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative">
+            <div class="product-item group rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative" data-categories="<?php echo esc_attr($data_categories); ?>">
               <div class="relative bg-muted aspect-square p-8 flex items-center justify-center overflow-hidden">
                 <!-- Main Image -->
                 <img src="<?php echo esc_url($main_img); ?>" 
@@ -110,6 +120,44 @@ get_header(); ?>
 
       </div>
     </section>
+
+    <!-- Filter Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            // Remove active classes from all buttons
+            filterBtns.forEach(b => {
+              b.classList.remove('bg-primary', 'text-white', 'shadow-md');
+              b.classList.add('bg-white', 'text-primary', 'border', 'border-primary/10');
+            });
+
+            // Add active classes to the clicked button
+            this.classList.remove('bg-white', 'text-primary', 'border', 'border-primary/10');
+            this.classList.add('bg-primary', 'text-white', 'shadow-md');
+
+            const filterValue = this.getAttribute('data-filter');
+
+            // Filter the products
+            productItems.forEach(item => {
+              if (filterValue === 'all') {
+                item.style.display = 'flex';
+              } else {
+                const itemCats = item.getAttribute('data-categories').split(' ');
+                if (itemCats.includes(filterValue)) {
+                  item.style.display = 'flex';
+                } else {
+                  item.style.display = 'none';
+                }
+              }
+            });
+          });
+        });
+      });
+    </script>
 </main>
 
 <?php get_footer(); ?>
