@@ -1,3 +1,4 @@
+<!-- Braspump Theme Update: 2026-05-13 13:38 -->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
