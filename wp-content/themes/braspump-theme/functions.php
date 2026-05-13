@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'braspump_setup' );
  * Enqueue scripts and styles.
  */
 function braspump_scripts() {
-    wp_enqueue_style( 'braspump-style', get_stylesheet_uri(), array(), '1.0.3' );
+    wp_enqueue_style( 'braspump-style', get_stylesheet_uri(), array(), '1.0.4' );
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap', array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'braspump_scripts' );

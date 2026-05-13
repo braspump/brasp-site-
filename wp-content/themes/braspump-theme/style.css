@@ -929,3 +929,130 @@ body.woocommerce-page .woocommerce-error {
         padding-bottom: 5rem !important;
     }
 }
+
+/* ==========================================================================
+   WooCommerce My Account (Login/Register) Styles
+   ========================================================================== */
+body.woocommerce-account .woocommerce {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+body.woocommerce-account .woocommerce-MyAccount-content,
+body.woocommerce-account .u-columns.col2-set,
+body.woocommerce-account #customer_login {
+    background: #ffffff !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 10px 40px rgba(42, 34, 90, 0.08) !important;
+    padding: 3rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+}
+
+body.woocommerce-account h2 {
+    color: var(--primary) !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    font-size: 1.75rem !important;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: -0.02em !important;
+}
+
+body.woocommerce-account form.login, 
+body.woocommerce-account form.register {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body.woocommerce-account .u-column1, 
+body.woocommerce-account .u-column2 {
+    padding: 1rem !important;
+}
+
+/* Inputs */
+body.woocommerce-account .woocommerce-Input,
+body.woocommerce-account input.input-text {
+    width: 100% !important;
+    padding: 1rem 1.25rem !important;
+    border: 2px solid #f3f4f6 !important;
+    border-radius: 0.75rem !important;
+    background-color: #f9fafb !important;
+    font-weight: 500 !important;
+    color: var(--primary) !important;
+    transition: all 0.3s ease !important;
+}
+
+body.woocommerce-account .woocommerce-Input:focus,
+body.woocommerce-account input.input-text:focus {
+    border-color: var(--brand-gold) !important;
+    background-color: #fff !important;
+    box-shadow: 0 0 0 4px rgba(250, 201, 4, 0.1) !important;
+    outline: none !important;
+}
+
+body.woocommerce-account form label {
+    font-weight: 700 !important;
+    color: var(--primary) !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+}
+
+body.woocommerce-account form label.woocommerce-form__label-for-checkbox {
+    display: inline-flex !important;
+    align-items: center !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+}
+
+body.woocommerce-account form label.woocommerce-form__label-for-checkbox input {
+    margin-right: 0.5rem !important;
+}
+
+/* Button */
+body.woocommerce-account .woocommerce-Button {
+    background-color: var(--brand-gold) !important;
+    color: var(--primary) !important;
+    font-weight: 900 !important;
+    border-radius: 9999px !important;
+    padding: 1.125rem 2.5rem !important;
+    text-transform: uppercase !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.05em !important;
+    transition: all 0.3s !important;
+    box-shadow: 0 4px 15px rgba(250, 201, 4, 0.2) !important;
+    border: none !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+}
+
+body.woocommerce-account .woocommerce-Button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(250, 201, 4, 0.35) !important;
+    filter: brightness(1.05) !important;
+}
+
+/* Lost Password Link */
+body.woocommerce-account .lost_password a {
+    color: var(--primary) !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+}
+
+body.woocommerce-account .lost_password a:hover {
+    color: var(--brand-gold) !important;
+}
+
+/* Fix mobile spacing */
+@media (max-width: 768px) {
+    body.woocommerce-account .woocommerce-MyAccount-content,
+    body.woocommerce-account .u-columns.col2-set,
+    body.woocommerce-account #customer_login {
+        padding: 1.5rem !important;
+        margin-top: 1rem !important;
+    }
+}
