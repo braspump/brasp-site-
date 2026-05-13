@@ -1,0 +1,52 @@
+﻿[
+    {
+        "id":  32,
+        "slug":  "comprar-online",
+        "status":  "publish"
+    },
+    {
+        "id":  24,
+        "slug":  "contato",
+        "status":  "publish"
+    },
+    {
+        "id":  22,
+        "slug":  "unidades-suctoras",
+        "status":  "publish"
+    },
+    {
+        "id":  20,
+        "slug":  "bombas-de-vacuo-4-consultorios",
+        "status":  "publish"
+    },
+    {
+        "id":  18,
+        "slug":  "bombas-de-vacuo-2-consultorios",
+        "status":  "publish"
+    },
+    {
+        "id":  16,
+        "slug":  "bombas-de-vacuo",
+        "status":  "publish"
+    },
+    {
+        "id":  12,
+        "slug":  "inicio",
+        "status":  "publish"
+    },
+    {
+        "id":  10,
+        "slug":  "my-account",
+        "status":  "publish"
+    },
+    {
+        "id":  9,
+        "slug":  "checkout",
+        "status":  "publish"
+    },
+    {
+        "id":  8,
+        "slug":  "cart",
+        "status":  "publish"
+    }
+]

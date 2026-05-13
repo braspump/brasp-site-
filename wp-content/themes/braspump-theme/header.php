@@ -49,7 +49,12 @@
       ?>
 
       <?php if ( class_exists( 'WooCommerce' ) ) : ?>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-5">
+        <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="text-white hover:text-brand-gold transition-colors flex items-center gap-2" aria-label="Minha Conta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="hidden lg:block text-xs font-black tracking-wider uppercase mt-1">Entrar / Minha Conta</span>
+        </a>
+        <div class="w-px h-6 bg-white/20 hidden lg:block"></div>
         <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="relative flex items-center justify-center text-white hover:text-brand-gold transition-colors" aria-label="Carrinho">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="absolute top-[14px] text-[11px] font-black leading-none"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
@@ -65,6 +70,7 @@
       <a href="<?php echo esc_url( home_url( '/bombas-de-vacuo' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">BOMBAS</a>
       <a href="<?php echo esc_url( home_url( '/unidades-suctoras' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">SUCTORAS</a>
       <a href="<?php echo function_exists( 'wc_get_page_id' ) ? esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) : esc_url( home_url( '/shop' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">LOJA</a>
+      <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="text-[13px] font-black text-brand-gold hover:text-white transition uppercase tracking-wider">MINHA CONTA</a>
       <a href="<?php echo esc_url( home_url( '/contato' ) ); ?>" class="text-[13px] font-black text-white hover:text-brand-gold transition uppercase tracking-wider">CONTATO</a>
     </nav>
   </header>
