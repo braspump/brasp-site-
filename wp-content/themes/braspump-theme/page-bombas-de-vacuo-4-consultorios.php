@@ -35,7 +35,7 @@ get_header(); ?>
               <li>Potência do motor <strong class="text-primary font-bold">1,0 HP</strong>.</li>
               <li>Vácuo máximo <strong class="text-primary font-bold">550 mm/Hg</strong>.</li>
             </ul>
-            <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
+            <a href="<?php echo esc_url( home_url( '/product/bomba-de-vacuo-bc4-linha-carbon/' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
               SAIBA MAIS
             </a>
           </div>
@@ -57,7 +57,7 @@ get_header(); ?>
                 <li>Potência do motor <strong class="text-primary font-bold">1,0 HP</strong>.</li>
                 <li>Vácuo máximo <strong class="text-primary font-bold">550 mm/Hg</strong>.</li>
               </ul>
-              <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
+              <a href="<?php echo esc_url( home_url( '/product/bomba-de-vacuo-turbo-max/' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
                 SAIBA MAIS
               </a>
             </div>
@@ -88,7 +88,7 @@ get_header(); ?>
               <li>Potência do motor <strong class="text-primary font-bold">1,0 HP</strong>.</li>
               <li>Vácuo máximo <strong class="text-primary font-bold">550 mm/Hg</strong>.</li>
             </ul>
-            <a href="<?php echo esc_url( home_url( '/loja' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
+            <a href="<?php echo esc_url( home_url( '/product/bomba-de-vacuo-turbo-vac/' ) ); ?>" class="inline-block bg-brand-gold text-primary font-black px-12 py-3 rounded-md shadow-md hover:brightness-110 transition uppercase tracking-wider text-sm">
               SAIBA MAIS
             </a>
           </div>

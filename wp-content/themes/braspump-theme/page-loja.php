@@ -4,150 +4,112 @@
  */
 get_header(); ?>
 
-  <main class="flex-1 relative">
-    <section class="bg-primary text-primary-foreground py-24 text-center">
-      <div class="container mx-auto px-4">
+<main class="flex-1 relative">
+    <!-- Page Header -->
+    <section class="bg-primary text-primary-foreground py-24 text-center relative overflow-hidden">
+      <div class="container mx-auto px-4 relative z-10">
         <div class="page-banner">
-          <span class="text-xs tracking-[0.3em] font-black opacity-70">LOJA</span>
+          <span class="text-xs tracking-[0.3em] font-black opacity-70">BRASPUMP</span>
           <h1 class="text-4xl md:text-6xl font-black mt-2">LOJA ONLINE</h1>
         </div>
-        <p class="text-primary-foreground/80 mt-8 text-lg font-medium">Nossos produtos de excelência</p>
+      </div>
+      <!-- Wave Effect -->
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180 opacity-10">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-24">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+        </svg>
       </div>
     </section>
 
-    <section class="container mx-auto px-4 py-14">
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- BC2 -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <span class="absolute top-3 left-3 z-10 rounded-full bg-brand-gold px-3 py-1 text-xs font-bold text-brand-gold-foreground">Oferta!</span>
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc2-linha-carbon' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6 relative overflow-hidden">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/BC2-C-CAPA.webp" alt="BC2 Com Capa" class="max-h-full object-contain transition-all duration-500 group-hover:opacity-0 group-hover:scale-90" />
-              <img src="<?php echo get_template_directory_uri(); ?>/images/BC2-S-CAPA.webp" alt="BC2 Sem Capa" class="absolute inset-0 m-auto max-h-full object-contain opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 p-6" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc2-linha-carbon' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo BC2 – Linha CARBON | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 3.850,00 – R$ 4.250,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc2-linha-carbon' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- BC4 -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <span class="absolute top-3 left-3 z-10 rounded-full bg-brand-gold px-3 py-1 text-xs font-bold text-brand-gold-foreground">Oferta!</span>
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc4-linha-carbon' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6 relative overflow-hidden">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/BC4-C-CAPA.webp" alt="BC4 Com Capa" class="max-h-full object-contain transition-all duration-500 group-hover:opacity-0 group-hover:scale-90" />
-              <img src="<?php echo get_template_directory_uri(); ?>/images/BC4-S-CAPA.webp" alt="BC4 Sem Capa" class="absolute inset-0 m-auto max-h-full object-contain opacity-0 scale-110 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 p-6" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc4-linha-carbon' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo BC4 – Linha CARBON | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 3.850,00 – R$ 4.250,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-bc4-linha-carbon' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- Turbo Light -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Turbo-Light-C-capa.webp" alt="Turbo Light" class="max-h-full object-contain group-hover:scale-105 transition" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo Turbo Light – Linha TURBO | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 5.300,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- Turbo Light SC -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light-sc' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Turbo-Light-SC.webp" alt="Turbo Light SC" class="max-h-full object-contain group-hover:scale-105 transition" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light-sc' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo Turbo Light SC – Linha TURBO | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 4.970,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-light-sc' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- Turbo Max -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-max' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Turbo-Max.webp" alt="Turbo Max" class="max-h-full object-contain group-hover:scale-105 transition" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-max' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo Turbo Max – Linha TURBO | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 5.590,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-max' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- Turbo VAC -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-vac' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Turbo-VAC.webp" alt="Turbo VAC" class="max-h-full object-contain group-hover:scale-105 transition" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-vac' ) ); ?>" class="hover:text-brand-gold transition">Bomba de Vácuo Turbo VAC – Linha TURBO | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 5.240,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/bomba-de-vacuo-turbo-vac' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
-
-        <!-- Unidade Suctora -->
-        <article class="group relative rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition flex flex-col">
-          <a href="<?php echo esc_url( home_url( '/produto/unidade-suctora' ) ); ?>" class="block">
-            <div class="bg-muted aspect-square flex items-center justify-center p-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/unidade-suctora-mdelo-gp.webp" alt="Unidade Suctora" class="max-h-full object-contain group-hover:scale-105 transition" />
-            </div>
-          </a>
-          <div class="p-4 flex-1 flex flex-col">
-            <h3 class="font-bold text-primary leading-snug text-[13px] min-h-[3.5rem] flex items-center">
-              <a href="<?php echo esc_url( home_url( '/produto/unidade-suctora' ) ); ?>" class="hover:text-brand-gold transition">Unidade Suctora | BRASPUMP</a>
-            </h3>
-            <p class="mt-2 font-extrabold text-primary text-sm">R$ 820,00 – R$ 1.000,00</p>
-            <a href="<?php echo esc_url( home_url( '/produto/unidade-suctora' ) ); ?>" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 font-bold text-primary hover:brightness-110 transition shadow-sm uppercase text-xs">
-              VER DETALHES
-            </a>
-          </div>
-        </article>
+    <!-- Category Filters -->
+    <section class="bg-muted py-6 border-b border-border sticky top-[72px] z-30">
+      <div class="container mx-auto px-4 flex flex-wrap justify-center gap-4">
+        <button class="px-6 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-md transition hover:scale-105">TODOS</button>
+        <?php 
+        $categories = get_terms( array(
+            'taxonomy' => 'product_cat',
+            'include'  => array(17, 18, 19), // Linha CARBON, TURBO e Suctoras
+            'orderby'  => 'include'
+        ) );
+        foreach ($categories as $cat) : ?>
+          <button class="px-6 py-2 rounded-full bg-white text-primary border border-primary/10 font-bold text-sm transition hover:bg-primary hover:text-white hover:scale-105">
+            <?php echo esc_html( strtoupper($cat->name) ); ?>
+          </button>
+        <?php endforeach; ?>
       </div>
     </section>
-  </main>
+
+    <!-- Product Grid -->
+    <section class="container mx-auto px-4 py-20">
+      <div class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <?php
+        $args = array(
+            'post_type'      => 'product',
+            'posts_per_page' => -1,
+            'post__not_in'   => array(35), // Esconder produto de teste Cielo
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => array(17, 18, 19),
+                ),
+            ),
+        );
+        $loop = new WP_Query( $args );
+
+        if ( $loop->have_posts() ) :
+          while ( $loop->have_posts() ) : $loop->the_post();
+            global $product;
+            $attachment_ids = $product->get_gallery_image_ids();
+            $main_img = get_the_post_thumbnail_url(get_the_ID(), 'large');
+            $hover_img = !empty($attachment_ids) ? wp_get_attachment_url($attachment_ids[0]) : $main_img;
+            $category_names = wc_get_product_category_list( get_the_ID(), ', ', '<span class="text-[10px] font-black text-brand-gold uppercase tracking-tighter mb-1 block">', '</span>' );
+            ?>
+            
+            <div class="group rounded-2xl bg-card border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative">
+              <div class="relative bg-muted aspect-square p-8 flex items-center justify-center overflow-hidden">
+                <!-- Main Image -->
+                <img src="<?php echo esc_url($main_img); ?>" 
+                     alt="<?php the_title(); ?>" 
+                     class="max-h-full object-contain transition duration-500 group-hover:opacity-0 group-hover:scale-90" />
+                
+                <!-- Hover Image (if exists) -->
+                <img src="<?php echo esc_url($hover_img); ?>" 
+                     alt="<?php the_title(); ?>" 
+                     class="absolute max-h-full object-contain opacity-0 scale-110 transition duration-500 group-hover:opacity-100 group-hover:scale-100 p-8" />
+                
+                <?php if ($product->is_on_sale()) : ?>
+                  <span class="absolute top-4 left-4 bg-brand-gold text-primary text-[10px] font-black px-3 py-1 rounded-full shadow-sm">OFERTA!</span>
+                <?php endif; ?>
+              </div>
+              
+              <div class="p-6 flex-1 flex flex-col">
+                <?php echo $category_names; ?>
+                <h3 class="text-[15px] font-black text-primary leading-tight uppercase tracking-tight"><?php the_title(); ?></h3>
+                <div class="mt-4 flex items-center justify-between border-t border-muted pt-4">
+                  <div class="flex flex-col">
+                    <span class="text-[11px] text-muted-foreground font-bold uppercase tracking-widest opacity-50">A partir de</span>
+                    <span class="text-lg font-black text-primary"><?php echo $product->get_price_html(); ?></span>
+                  </div>
+                  <a href="<?php the_permalink(); ?>" class="h-11 w-11 rounded-full bg-primary text-white flex items-center justify-center hover:bg-brand-gold hover:text-primary transition-colors shadow-lg group/btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 group-hover/btn:translate-x-0.5 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </a>
+                </div>
+                <a href="<?php the_permalink(); ?>" class="mt-4 btn-primary justify-center py-3 text-sm">
+                  VER DETALHES
+                </a>
+              </div>
+            </div>
+
+            <?php
+          endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
+
+      </div>
+    </section>
+</main>
 
 <?php get_footer(); ?>
