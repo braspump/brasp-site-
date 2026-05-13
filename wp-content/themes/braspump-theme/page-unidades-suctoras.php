@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <main class="flex-1 relative">
-    <section class="bg-primary text-primary-foreground py-24 text-center">
+    <section class="bg-primary text-primary-foreground pt-32 pb-24 text-center">
       <div class="container mx-auto px-4">
         <div class="page-banner">
           <span class="text-xs tracking-[0.3em] font-black opacity-70">PRODUTOS</span>

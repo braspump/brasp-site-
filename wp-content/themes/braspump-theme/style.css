@@ -351,9 +351,9 @@ img {
   background-color: var(--brand-gold);
   color: var(--primary);
   border-radius: 999px;
-  padding: 1.5rem 4rem;
+  padding: 1.25rem 4rem;
   display: inline-block;
-  margin-top: -1.5rem;
+  margin-top: 0.5rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 

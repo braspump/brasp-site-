@@ -6,7 +6,7 @@ get_header(); ?>
 
 <main class="flex-1 relative">
     <!-- Page Header -->
-    <section class="bg-primary text-primary-foreground py-24 text-center relative overflow-hidden">
+    <section class="bg-primary text-primary-foreground pt-32 pb-24 text-center relative overflow-hidden">
       <div class="container mx-auto px-4 relative z-10">
         <div class="page-banner">
           <span class="text-xs tracking-[0.3em] font-black opacity-70">BRASPUMP</span>
