@@ -29,8 +29,8 @@
   <header class="sticky top-0 inset-x-0 z-50 bg-primary shadow-lg border-b border-white/5">
     <div class="container mx-auto flex items-center justify-between gap-4 px-6 py-1.5">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="shrink-0 group">
-        <div class="bg-white rounded-full px-4 py-1 shadow-inner group-hover:scale-105 transition">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Braspump" class="h-12 w-auto md:h-14" width="180" height="56" fetchpriority="high" />
+        <div class="bg-white rounded-full px-6 py-1.5 shadow-inner group-hover:scale-105 transition">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Braspump" class="h-14 w-auto md:h-16" width="180" height="64" fetchpriority="high" />
         </div>
       </a>
 
