@@ -58,8 +58,7 @@ get_header(); ?>
       </div>
 
       <div class="rounded-2xl bg-card p-6 border border-border shadow-sm">
-        <?php echo do_shortcode('[contact-form-7 id="123" title="Contato"]'); // Exemplo de integração com CF7 ?>
-        <p class="text-xs text-muted-foreground mt-4 italic">Nota: Configure o formulário no painel do WordPress para que as mensagens cheguem ao seu e-mail.</p>
+        <?php echo do_shortcode('[contact-form-7 id="94" title="Contact form 1"]'); ?>
       </div>
     </section>
 </main>

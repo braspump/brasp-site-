@@ -1064,3 +1064,93 @@ body.woocommerce-account .lost_password a:hover {
         margin-top: 1rem !important;
     }
 }
+
+/* ==========================================================================
+   Contact Form 7 — Braspump Styles
+   ========================================================================== */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid #f3f4f6;
+    border-radius: 0.75rem;
+    background-color: #f9fafb;
+    font-weight: 500;
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 input[type="tel"]:focus,
+.wpcf7 textarea:focus {
+    border-color: var(--brand-gold);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(250, 201, 4, 0.1);
+    outline: none;
+}
+
+.wpcf7 textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.wpcf7 label {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.wpcf7 input[type="submit"] {
+    background-color: var(--brand-gold);
+    color: var(--primary);
+    font-weight: 900;
+    border-radius: 9999px;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(250, 201, 4, 0.2);
+    width: 100%;
+    margin-top: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(250, 201, 4, 0.35);
+    filter: brightness(1.05);
+}
+
+.wpcf7-response-output {
+    border-radius: 0.75rem !important;
+    padding: 1rem 1.25rem !important;
+    margin-top: 1rem !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+.wpcf7-mail-sent-ok {
+    border-color: #22c55e !important;
+    color: #15803d !important;
+    background-color: #f0fdf4 !important;
+}
+
+.wpcf7-mail-sent-ng, .wpcf7-aborted {
+    border-color: #ef4444 !important;
+    color: #b91c1c !important;
+    background-color: #fef2f2 !important;
+}

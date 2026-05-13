@@ -87,25 +87,7 @@
         
         <div class="bg-white rounded-3xl p-8 shadow-2xl text-primary">
           <h3 class="text-2xl font-black mb-6">Envie uma mensagem</h3>
-          <form class="space-y-4">
-            <div>
-              <label class="block text-sm font-bold mb-1">Nome *</label>
-              <input type="text" placeholder="Digite seu nome" class="w-full bg-secondary border-none rounded-xl p-4 focus:ring-2 focus:ring-brand-gold outline-none" required />
-            </div>
-            <div>
-              <label class="block text-sm font-bold mb-1">E-Mail *</label>
-              <input type="email" placeholder="Digite seu e-mail" class="w-full bg-secondary border-none rounded-xl p-4 focus:ring-2 focus:ring-brand-gold outline-none" required />
-            </div>
-            <div>
-              <label class="block text-sm font-bold mb-1">Telefone *</label>
-              <input type="tel" placeholder="Digite seu telefone" class="w-full bg-secondary border-none rounded-xl p-4 focus:ring-2 focus:ring-brand-gold outline-none" required />
-            </div>
-            <div>
-              <label class="block text-sm font-bold mb-1">Mensagem</label>
-              <textarea placeholder="Deixe sua mensagem..." class="w-full bg-secondary border-none rounded-xl p-4 focus:ring-2 focus:ring-brand-gold outline-none min-h-[120px]"></textarea>
-            </div>
-            <button type="submit" class="w-full btn-primary justify-center py-4">ENVIAR</button>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="94" title="Contact form 1"]'); ?>
         </div>
       </div>
     </section>
