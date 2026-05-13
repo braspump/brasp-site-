@@ -514,10 +514,18 @@ img {
 .w-full { width: 100%; }
 .justify-center { justify-content: center; }
 
-/* Fix da barra de administração do WordPress no celular */
+/* Fix da barra de administração do WordPress */
+.admin-bar .hidden.lg\:block.bg-primary {
+    margin-top: 32px;
+}
+.admin-bar header.sticky {
+    top: 32px !important;
+}
+
 @media (max-width: 782px) {
   #wpadminbar { position: fixed !important; }
   .admin-bar header.sticky { top: 46px !important; }
+  .admin-bar .hidden.lg\:block.bg-primary { margin-top: 46px; }
 }
 
 /* ==========================================================================
