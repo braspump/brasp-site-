@@ -54,7 +54,7 @@ if ( class_exists( 'WooCommerce' ) ) {
     add_action('woocommerce_after_main_content', 'braspump_wrapper_end', 10);
 
     function braspump_wrapper_start() {
-        echo '<main class="flex-1 bg-background py-16"><div class="container mx-auto px-6">';
+        echo '<main class="flex-1 bg-background pt-32 pb-16"><div class="container mx-auto px-6">';
     }
 
     function braspump_wrapper_end() {
