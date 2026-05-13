@@ -1,0 +1,578 @@
+﻿[
+    {
+        "id":  64,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=220V\u0026attribute_modelo=GP",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "1000",
+        "regular_price":  "1000",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "220V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "GP"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "220V, GP",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/64",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  63,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=110V\u0026attribute_modelo=GP",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "1000",
+        "regular_price":  "1000",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "110V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "GP"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "110V, GP",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/63",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  62,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=220V\u0026attribute_modelo=PP",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "900",
+        "regular_price":  "900",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "220V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "PP"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "220V, PP",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/62",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  61,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=110V\u0026attribute_modelo=PP",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "900",
+        "regular_price":  "900",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "110V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "PP"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "110V, PP",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/61",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  60,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=220V\u0026attribute_modelo=P",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "820",
+        "regular_price":  "820",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "220V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "P"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "220V, P",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/60",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  59,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:04",
+        "date_created_gmt":  "2026-05-01T20:08:04",
+        "date_modified":  "2026-05-01T17:08:04",
+        "date_modified_gmt":  "2026-05-01T20:08:04",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/unidade-suctora/?attribute_voltagem=110V\u0026attribute_modelo=P",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "820",
+        "regular_price":  "820",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "2.00",
+        "dimensions":  {
+                           "length":  "34.0",
+                           "width":  "34.0",
+                           "height":  "11.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  87,
+                      "date_created":  "2026-05-13T09:42:51",
+                      "date_created_gmt":  "2026-05-13T15:42:51",
+                      "date_modified":  "2026-05-13T09:42:52",
+                      "date_modified_gmt":  "2026-05-13T15:42:52",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/unidade-suctora-mdelo-gp.webp",
+                      "name":  "unidade-suctora-mdelo-gp",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "110V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "P"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "110V, P",
+        "parent_id":  36,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations/59",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/36"
+                                  }
+                              ]
+                   }
+    }
+]
