@@ -1,0 +1,386 @@
+﻿[
+    {
+        "id":  46,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:01",
+        "date_created_gmt":  "2026-05-01T20:08:01",
+        "date_modified":  "2026-05-01T17:08:01",
+        "date_modified_gmt":  "2026-05-01T20:08:01",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/bomba-de-vacuo-bc2-linha-carbon/?attribute_voltagem=220V\u0026attribute_modelo=Sem+Capa",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "3850",
+        "regular_price":  "3850",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "20.00",
+        "dimensions":  {
+                           "length":  "31.0",
+                           "width":  "43.0",
+                           "height":  "46.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  81,
+                      "date_created":  "2026-05-13T09:42:37",
+                      "date_created_gmt":  "2026-05-13T15:42:37",
+                      "date_modified":  "2026-05-13T09:57:11",
+                      "date_modified_gmt":  "2026-05-13T15:57:11",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/BC2-C-CAPA.webp",
+                      "name":  "BC2-C-CAPA",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "220V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "Sem Capa"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "220V, Sem Capa",
+        "parent_id":  37,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations/46",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  45,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:01",
+        "date_created_gmt":  "2026-05-01T20:08:01",
+        "date_modified":  "2026-05-01T17:08:01",
+        "date_modified_gmt":  "2026-05-01T20:08:01",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/bomba-de-vacuo-bc2-linha-carbon/?attribute_voltagem=110V\u0026attribute_modelo=Sem+Capa",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "3850",
+        "regular_price":  "3850",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "20.00",
+        "dimensions":  {
+                           "length":  "31.0",
+                           "width":  "43.0",
+                           "height":  "46.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  81,
+                      "date_created":  "2026-05-13T09:42:37",
+                      "date_created_gmt":  "2026-05-13T15:42:37",
+                      "date_modified":  "2026-05-13T09:57:11",
+                      "date_modified_gmt":  "2026-05-13T15:57:11",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/BC2-C-CAPA.webp",
+                      "name":  "BC2-C-CAPA",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "110V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "Sem Capa"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "110V, Sem Capa",
+        "parent_id":  37,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations/45",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  44,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:01",
+        "date_created_gmt":  "2026-05-01T20:08:01",
+        "date_modified":  "2026-05-01T17:08:01",
+        "date_modified_gmt":  "2026-05-01T20:08:01",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/bomba-de-vacuo-bc2-linha-carbon/?attribute_voltagem=220V\u0026attribute_modelo=Com+Capa",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "4250",
+        "regular_price":  "4250",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "20.00",
+        "dimensions":  {
+                           "length":  "31.0",
+                           "width":  "43.0",
+                           "height":  "46.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  81,
+                      "date_created":  "2026-05-13T09:42:37",
+                      "date_created_gmt":  "2026-05-13T15:42:37",
+                      "date_modified":  "2026-05-13T09:57:11",
+                      "date_modified_gmt":  "2026-05-13T15:57:11",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/BC2-C-CAPA.webp",
+                      "name":  "BC2-C-CAPA",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "220V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "Com Capa"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "220V, Com Capa",
+        "parent_id":  37,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations/44",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37"
+                                  }
+                              ]
+                   }
+    },
+    {
+        "id":  43,
+        "type":  "variation",
+        "date_created":  "2026-05-01T17:08:01",
+        "date_created_gmt":  "2026-05-01T20:08:01",
+        "date_modified":  "2026-05-01T17:08:01",
+        "date_modified_gmt":  "2026-05-01T20:08:01",
+        "description":  "",
+        "permalink":  "https://equipobras.com.br/product/bomba-de-vacuo-bc2-linha-carbon/?attribute_voltagem=110V\u0026attribute_modelo=Com+Capa",
+        "sku":  "",
+        "global_unique_id":  "",
+        "price":  "4250",
+        "regular_price":  "4250",
+        "sale_price":  "",
+        "date_on_sale_from":  null,
+        "date_on_sale_from_gmt":  null,
+        "date_on_sale_to":  null,
+        "date_on_sale_to_gmt":  null,
+        "on_sale":  false,
+        "status":  "publish",
+        "purchasable":  true,
+        "virtual":  false,
+        "downloadable":  false,
+        "downloads":  [
+
+                      ],
+        "download_limit":  -1,
+        "download_expiry":  -1,
+        "tax_status":  "taxable",
+        "tax_class":  "",
+        "manage_stock":  false,
+        "stock_quantity":  null,
+        "stock_status":  "instock",
+        "backorders":  "no",
+        "backorders_allowed":  false,
+        "backordered":  false,
+        "low_stock_amount":  null,
+        "weight":  "20.00",
+        "dimensions":  {
+                           "length":  "31.0",
+                           "width":  "43.0",
+                           "height":  "46.0"
+                       },
+        "shipping_class":  "",
+        "shipping_class_id":  0,
+        "image":  {
+                      "id":  81,
+                      "date_created":  "2026-05-13T09:42:37",
+                      "date_created_gmt":  "2026-05-13T15:42:37",
+                      "date_modified":  "2026-05-13T09:57:11",
+                      "date_modified_gmt":  "2026-05-13T15:57:11",
+                      "src":  "https://equipobras.com.br/wp-content/uploads/2026/05/BC2-C-CAPA.webp",
+                      "name":  "BC2-C-CAPA",
+                      "alt":  ""
+                  },
+        "attributes":  [
+                           {
+                               "id":  0,
+                               "name":  "Voltagem",
+                               "slug":  "voltagem",
+                               "option":  "110V"
+                           },
+                           {
+                               "id":  0,
+                               "name":  "Modelo",
+                               "slug":  "modelo",
+                               "option":  "Com Capa"
+                           }
+                       ],
+        "menu_order":  0,
+        "meta_data":  [
+
+                      ],
+        "name":  "110V, Com Capa",
+        "parent_id":  37,
+        "_links":  {
+                       "self":  [
+                                    {
+                                        "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations/43",
+                                        "targetHints":  {
+                                                            "allow":  "GET POST PUT PATCH DELETE"
+                                                        }
+                                    }
+                                ],
+                       "collection":  [
+                                          {
+                                              "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37/variations"
+                                          }
+                                      ],
+                       "up":  [
+                                  {
+                                      "href":  "https://equipobras.com.br/wp-json/wc/v3/products/37"
+                                  }
+                              ]
+                   }
+    }
+]
