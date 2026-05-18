@@ -1,0 +1,168 @@
+﻿{
+    "form":  {
+                 "content":  "\u003clabel\u003e Your name\n    [text* your-name autocomplete:name] \u003c/label\u003e\n\n\u003clabel\u003e Your email\n    [email* your-email autocomplete:email] \u003c/label\u003e\n\n\u003clabel\u003e Subject\n    [text* your-subject] \u003c/label\u003e\n\n\u003clabel\u003e Your message (optional)\n    [textarea your-message] \u003c/label\u003e\n\n[submit \"Submit\"]",
+                 "fields":  [
+                                {
+                                    "type":  "text*",
+                                    "basetype":  "text",
+                                    "name":  "your-name",
+                                    "options":  [
+                                                    "autocomplete:name"
+                                                ],
+                                    "raw_values":  [
+
+                                                   ],
+                                    "labels":  [
+
+                                               ],
+                                    "values":  [
+
+                                               ],
+                                    "pipes":  [
+
+                                              ],
+                                    "content":  ""
+                                },
+                                {
+                                    "type":  "email*",
+                                    "basetype":  "email",
+                                    "name":  "your-email",
+                                    "options":  [
+                                                    "autocomplete:email"
+                                                ],
+                                    "raw_values":  [
+
+                                                   ],
+                                    "labels":  [
+
+                                               ],
+                                    "values":  [
+
+                                               ],
+                                    "pipes":  [
+
+                                              ],
+                                    "content":  ""
+                                },
+                                {
+                                    "type":  "text*",
+                                    "basetype":  "text",
+                                    "name":  "your-subject",
+                                    "options":  [
+
+                                                ],
+                                    "raw_values":  [
+
+                                                   ],
+                                    "labels":  [
+
+                                               ],
+                                    "values":  [
+
+                                               ],
+                                    "pipes":  [
+
+                                              ],
+                                    "content":  ""
+                                },
+                                {
+                                    "type":  "textarea",
+                                    "basetype":  "textarea",
+                                    "name":  "your-message",
+                                    "options":  [
+
+                                                ],
+                                    "raw_values":  [
+
+                                                   ],
+                                    "labels":  [
+
+                                               ],
+                                    "values":  [
+
+                                               ],
+                                    "pipes":  [
+
+                                              ],
+                                    "content":  ""
+                                },
+                                {
+                                    "type":  "submit",
+                                    "basetype":  "submit",
+                                    "name":  "",
+                                    "options":  [
+
+                                                ],
+                                    "raw_values":  [
+                                                       "Submit"
+                                                   ],
+                                    "labels":  [
+                                                   "Submit"
+                                               ],
+                                    "values":  [
+                                                   "Submit"
+                                               ],
+                                    "pipes":  [
+                                                  [
+                                                      "Submit",
+                                                      "Submit"
+                                                  ]
+                                              ],
+                                    "content":  ""
+                                }
+                            ]
+             },
+    "mail":  {
+                 "active":  true,
+                 "subject":  "[_site_title] \"[your-subject]\"",
+                 "sender":  "[_site_title] \u003cwordpress@equipobras.com.br\u003e",
+                 "recipient":  "luis@braspump.com.br",
+                 "body":  "From: [your-name] [your-email]\nSubject: [your-subject]\n\nMessage Body:\n[your-message]\n\n-- \nThis is a notification that a contact form was submitted on your website ([_site_title] [_site_url]).",
+                 "additional_headers":  "Reply-To: [your-email]",
+                 "attachments":  "",
+                 "use_html":  true,
+                 "exclude_blank":  true
+             },
+    "mail_2":  {
+                   "active":  false,
+                   "subject":  "[_site_title] \"[your-subject]\"",
+                   "sender":  "[_site_title] \u003cwordpress@equipobras.com.br\u003e",
+                   "recipient":  "[your-email]",
+                   "body":  "Message Body:\n[your-message]\n\n-- \nThis email is a receipt for your contact form submission on our website ([_site_title] [_site_url]) in which your email address was used. If that was not you, please ignore this message.",
+                   "additional_headers":  "Reply-To: [_site_admin_email]",
+                   "attachments":  "",
+                   "use_html":  true,
+                   "exclude_blank":  true
+               },
+    "messages":  {
+                     "mail_sent_ok":  "Thank you for your message. It has been sent.",
+                     "mail_sent_ng":  "There was an error trying to send your message. Please try again later.",
+                     "validation_error":  "One or more fields have an error. Please check and try again.",
+                     "spam":  "There was an error trying to send your message. Please try again later.",
+                     "accept_terms":  "You must accept the terms and conditions before sending your message.",
+                     "invalid_required":  "Please fill out this field.",
+                     "invalid_too_long":  "This field has a too long input.",
+                     "invalid_too_short":  "This field has a too short input.",
+                     "upload_failed":  "There was an unknown error uploading the file.",
+                     "upload_file_type_invalid":  "You are not allowed to upload files of this type.",
+                     "upload_file_too_large":  "The uploaded file is too large.",
+                     "upload_failed_php_error":  "There was an error uploading the file.",
+                     "invalid_date":  "Digite uma data no formato AAAA-MM-DD.",
+                     "date_too_early":  "Este campo tem uma data muito próxima.",
+                     "date_too_late":  "Este campo tem uma data muito distante.",
+                     "invalid_number":  "Digite um número.",
+                     "number_too_small":  "Este campo tem um número pequeno demais.",
+                     "number_too_large":  "Este campo tem um número grande demais.",
+                     "quiz_answer_not_correct":  "A resposta para o quiz está incorreta.",
+                     "invalid_email":  "Digite um endereço de e-mail.",
+                     "invalid_url":  "Digite um URL.",
+                     "invalid_tel":  "Digite um número de telefone.",
+                     "captcha_not_match":  "O código digitado está incorreto."
+                 },
+    "additional_settings":  {
+                                "content":  "",
+                                "settings":  [
+
+                                             ]
+                            }
+}
