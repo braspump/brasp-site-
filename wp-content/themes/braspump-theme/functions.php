@@ -253,6 +253,44 @@ function braspump_save_brazilian_checkout_fields( $order_id ) {
 }
 
 /**
+ * Inclui CPF, Número e Bairro nos e-mails de notificação do WooCommerce
+ * (aparece tanto no e-mail do administrador quanto no e-mail do cliente)
+ */
+add_action( 'woocommerce_email_customer_details', 'braspump_email_include_custom_fields', 20, 4 );
+function braspump_email_include_custom_fields( $order, $sent_to_admin, $plain_text, $email ) {
+    $cpf          = $order->get_meta( '_billing_cpf' );
+    $number       = $order->get_meta( '_billing_number' );
+    $neighborhood = $order->get_meta( '_billing_neighborhood' );
+
+    // Não exibe bloco se todos os campos estiverem vazios
+    if ( empty( $cpf ) && empty( $number ) && empty( $neighborhood ) ) {
+        return;
+    }
+
+    if ( $plain_text ) {
+        // Versão texto simples
+        echo "\n--- Dados Adicionais ---\n";
+        if ( $cpf )          echo "CPF: " . esc_html( $cpf ) . "\n";
+        if ( $number )       echo "Número: " . esc_html( $number ) . "\n";
+        if ( $neighborhood ) echo "Bairro: " . esc_html( $neighborhood ) . "\n";
+    } else {
+        // Versão HTML
+        echo '<h2 style="color:#1a3c6e; font-family:Arial,sans-serif; font-size:16px; margin-top:24px; border-bottom:1px solid #e0e0e0; padding-bottom:6px;">Dados Adicionais</h2>';
+        echo '<table cellspacing="0" cellpadding="6" style="width:100%; font-family:Arial,sans-serif; font-size:14px; border-collapse:collapse;">';
+        if ( $cpf ) {
+            echo '<tr><th align="left" style="width:30%; padding:6px 0; color:#555;">CPF</th><td style="padding:6px 0;">' . esc_html( $cpf ) . '</td></tr>';
+        }
+        if ( $number ) {
+            echo '<tr><th align="left" style="padding:6px 0; color:#555;">Número</th><td style="padding:6px 0;">' . esc_html( $number ) . '</td></tr>';
+        }
+        if ( $neighborhood ) {
+            echo '<tr><th align="left" style="padding:6px 0; color:#555;">Bairro</th><td style="padding:6px 0;">' . esc_html( $neighborhood ) . '</td></tr>';
+        }
+        echo '</table>';
+    }
+}
+
+/**
  * Exibe os campos na administração do pedido (WP-Admin)
  */
 add_filter( 'woocommerce_admin_billing_fields', 'braspump_admin_billing_fields' );
