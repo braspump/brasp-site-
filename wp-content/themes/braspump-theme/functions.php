@@ -321,3 +321,24 @@ function braspump_admin_billing_fields( $fields ) {
     );
     return $fields;
 }
+
+/**
+ * Atualiza temporariamente o formulário de contato 7 (ID 94) para o idioma português
+ */
+add_action( 'init', 'braspump_temp_translate_cf7' );
+function braspump_temp_translate_cf7() {
+    $form_id = 94;
+    $form_post = get_post( $form_id );
+    if ( $form_post && $form_post->post_type === 'wpcf7_contact_form' ) {
+        // Só atualiza se o formulário ainda estiver com os textos em inglês
+        if ( strpos( $form_post->post_content, 'Your name' ) !== false ) {
+            $new_content = "<label> Seu nome\n    [text* your-name autocomplete:name] </label>\n\n<label> Seu e-mail\n    [email* your-email autocomplete:email] </label>\n\n<label> Assunto\n    [text* your-subject] </label>\n\n<label> Sua mensagem (opcional)\n    [textarea your-message] </label>\n\n[submit \"Enviar mensagem\"]";
+            
+            wp_update_post( array(
+                'ID'           => $form_id,
+                'post_content' => $new_content
+            ) );
+        }
+    }
+}
+
