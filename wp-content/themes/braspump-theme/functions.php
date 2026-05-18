@@ -96,6 +96,10 @@ add_filter( 'woocommerce_dropdown_variation_attribute_options_html', 'braspump_h
 function braspump_hide_voltage_for_suctors( $html, $args ) {
     if ( is_product() ) {
         global $post;
+        if ( ! isset( $post ) || ! is_a( $post, 'WP_Post' ) ) {
+            return $html;
+        }
+        
         // Regra para Unidade Suctora (Esconde Voltagem)
         if ( $post->post_name === 'unidade-suctora' && strpos( $args['attribute'], 'voltagem' ) !== false ) {
             $html .= '<style>.variations tr:has(select[name*="voltagem"]) { display: none !important; }</style>';
@@ -159,6 +163,9 @@ function braspump_single_product_image_fallback( $html, $attachment_id ) {
     }
 
     global $post;
+    if ( ! isset( $post ) || ! is_a( $post, 'WP_Post' ) ) {
+        return $html;
+    }
 
     $slug_image_map = array(
         'bomba-de-vacuo-bc2-linha-carbon' => 'BC2-C-CAPA.webp',
