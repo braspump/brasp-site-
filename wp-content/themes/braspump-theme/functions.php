@@ -258,6 +258,11 @@ function braspump_save_brazilian_checkout_fields( $order_id ) {
  */
 add_action( 'woocommerce_email_customer_details', 'braspump_email_include_custom_fields', 20, 4 );
 function braspump_email_include_custom_fields( $order, $sent_to_admin, $plain_text, $email ) {
+    // Garante que $order é um objeto de pedido válido para evitar erros fatais em e-mails de teste
+    if ( ! is_a( $order, 'WC_Order' ) ) {
+        return;
+    }
+
     $cpf          = $order->get_meta( '_billing_cpf' );
     $number       = $order->get_meta( '_billing_number' );
     $neighborhood = $order->get_meta( '_billing_neighborhood' );
